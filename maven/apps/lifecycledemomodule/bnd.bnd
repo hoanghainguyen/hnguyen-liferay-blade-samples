@@ -1,5 +1,5 @@
 Bundle-Name: com.liferay.training.lifecycle
-Bundle-SymbolicName:com.liferay
+Bundle-SymbolicName:com.liferay.training.lifecycle
 
 -buildpath: \
 	osgi.annotation; version=6.0.1,\
@@ -13,10 +13,10 @@ Bundle-SymbolicName:com.liferay
 javac.source: 1.8
 javac.target: 1.8
 
-Bundle-Version: 1.0.0.${tstamp}
+Bundle-Version: 1.0.0
 Private-Package: com.liferay.training.lifecycle
 
--dsannotations: *
+
 
 Bundle-Activator: com.liferay.training.lifecycle.LifecycleActivator
 Export-Package: com.liferay.training.lifecycle
