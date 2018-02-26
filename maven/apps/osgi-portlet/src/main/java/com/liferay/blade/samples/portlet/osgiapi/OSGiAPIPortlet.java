@@ -35,7 +35,7 @@ public class OSGiAPIPortlet extends GenericPortlet {
 
 		PrintWriter printWriter = response.getWriter();
 
-		printWriter.print("OSGi API Portlet - Hello World!");
+		printWriter.print("OSGi API Portlet - Hoang Hai says Hello to the World, version 1.0.1 !");
 	}
 
 }

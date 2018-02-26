@@ -1,0 +1,5 @@
+Bundle-Name: com.proliferay.sample.osgi.service
+Bundle-SymbolicName: com.proliferay
+Bundle-Version: 1.0-SNAPSHOT
+Bundle-Activator: com.proliferay.activator.ServiceActivator
+Export-Package: com.proliferay.service

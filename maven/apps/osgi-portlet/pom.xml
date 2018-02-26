@@ -31,6 +31,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>com.liferay.blade.osgi.portlet-${project.version}</finalName>
+		<finalName>com.liferay.blade.osgi.portlet-1.0.0</finalName>
 	</build>
 </project>

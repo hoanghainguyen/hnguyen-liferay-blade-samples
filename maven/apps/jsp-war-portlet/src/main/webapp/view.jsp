@@ -46,7 +46,7 @@ page import="com.liferay.portal.kernel.log.LogFactoryUtil" %>
 	<liferay-ui:search-container-results
 		results="<%= fooLocalService.getFoos(searchContainer.getStart(), searchContainer.getEnd()) %>"
 	/>
-
++
 	<liferay-ui:search-container-row
 		className="com.liferay.blade.samples.servicebuilder.model.Foo"
 		escapedModel="true"
