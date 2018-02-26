@@ -1,2 +1,22 @@
 Bundle-SymbolicName: com.liferay.training.portlet
 Bundle-Version: 1.0.0
+
+Bundle-Name:  com.liferay.training.portlet
+Bundle-SymbolicName: com.liferay.training.portlet
+
+-buildpath: \
+	osgi.annotation; version=6.0.1,\
+	osgi.core; version=6.0,\
+	osgi.cmpn; version=6.0
+	
+
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
+Bundle-Version: 1.0.0
+
+
+Export-Package:  com.liferay.training.portlet

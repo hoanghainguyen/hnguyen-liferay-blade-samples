@@ -15,7 +15,7 @@
 		<version>1.0.0</version>
 	</parent>
 
-       <dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
 			<artifactId>com.liferay.portal.kernel</artifactId>
@@ -28,6 +28,12 @@
 			<version>2.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+            <groupId>com.liferay.portal</groupId>
+            <artifactId>com.liferay.util.taglib</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -48,18 +54,18 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation -->
 		<dependency>
-		    <groupId>org.osgi</groupId>
-		    <artifactId>org.osgi.annotation</artifactId>
-		    <version>6.0.0</version>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.annotation</artifactId>
+			<version>6.0.0</version>
 		</dependency>
-<dependency>
-    <groupId>org.osgi</groupId>
-    <artifactId>org.osgi.annotation.versioning</artifactId>
-    <version>1.0.0</version>
-</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.annotation.versioning</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 
-<!--
+
 	<build>
 		<plugins>
 			<plugin>
@@ -79,6 +85,9 @@
 					<archive>
 						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
 					</archive>
+					<excludes>
+                        <exclude>**/META-INF/resources/**/.sass-cache/</exclude>
+                    </excludes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -97,7 +106,7 @@
 					<dependency>
 						<groupId>biz.aQute.bnd</groupId>
 						<artifactId>biz.aQute.bndlib</artifactId>
-						<version>3.3.0</version>
+						<version>3.2.0</version>
 					</dependency>
 					<dependency>
 						<groupId>com.liferay</groupId>
@@ -108,55 +117,5 @@
 			</plugin>
 		</plugins>
 	</build>
--->
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.6</version>
-				<configuration>
-					<archive>
-						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>biz.aQute.bnd</groupId>
-				<artifactId>bnd-maven-plugin</artifactId>
-				<version>3.2.0</version>
-				<executions>
-					<execution>
-						<id>default-bnd-process</id>
-						<goals>
-							<goal>bnd-process</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>biz.aQute.bnd</groupId>
-						<artifactId>biz.aQute.bndlib</artifactId>
-						<version>3.2.0</version>
-					</dependency>
-					<dependency>
-						<groupId>com.liferay</groupId>
-						<artifactId>com.liferay.ant.bnd</artifactId>
-						<version>2.0.28</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-		</plugins>
-	</build>
- 
 </project>
