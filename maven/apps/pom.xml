@@ -11,7 +11,7 @@
 		<artifactId>maven</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	
+
 	<modules>
 		<module>action-command-portlet</module>
 		<module>blueprint-portlet</module>
@@ -34,70 +34,10 @@
 		<module>springmvc-portlet</module>
 		<module>felix-tutorial</module>
 	</modules>
-	
-	<build>
-	<plugins>
-	<!-- 
-		<plugin>
-	    <groupId>biz.aQute.bnd</groupId>
-	    <artifactId>bnd-maven-plugin</artifactId>
-	    <version>3.3.0</version>
-	    <executions>
-	        <execution>
-	            <goals>
-	                <goal>bnd-process</goal>
-	            </goals>
-	        </execution>
-	    </executions>
-	    </plugin>
-	    
-	    
-	    <plugin>
-        <groupId>biz.aQute.bnd</groupId>
-        <artifactId>bnd-testing-maven-plugin</artifactId>
-        <version>${bnd.version}</version>
-        <configuration>
-            <failOnChanges>false</failOnChanges>
-            <bndruns>
-                <bndrun>mytest.bndrun</bndrun>
-            </bndruns>
-        </configuration>
-        <executions>
-            <execution>
-                <goals>
-                    <goal>testing</goal>
-                </goals>
-            </execution>
-        </executions>
-    </plugin>
-    
-    
-	    <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-					</archive>
-				</configuration>
-		</plugin>
-		
-		
-		<plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-bundle-plugin</artifactId>
-         <version>3.0.1</version>
-         <extensions>true</extensions>
-      </plugin>
-      -->
-	  
-	 
-    
-    </plugins>
-    </build>
 
 
-<dependencies>
+
+	<dependencies>
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
 			<artifactId>com.liferay.portal.kernel</artifactId>
@@ -128,11 +68,11 @@
 			<version>1.3.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation -->
+		
 		<dependency>
-		    <groupId>org.osgi</groupId>
-		    <artifactId>org.osgi.annotation</artifactId>
-		    <version>6.0.0</version>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.annotation</artifactId>
+			<version>6.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
