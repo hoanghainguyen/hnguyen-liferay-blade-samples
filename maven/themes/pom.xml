@@ -26,5 +26,6 @@
 		<module>simple-theme</module>
 		<module>theme-contributor</module>
     <module>test-theme</module>
+    <module>westeros-bank-theme</module>
   </modules>
 </project>

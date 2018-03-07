@@ -5,7 +5,7 @@
     <artifactId>themes</artifactId>
     <groupId>blade</groupId>
     <version>1.0.0</version>
-  </parent>
+    </parent>
 	<groupId>com.blacksunplc.training</groupId>
 	<artifactId>test-theme</artifactId>
 	<version>1.0.0</version>
